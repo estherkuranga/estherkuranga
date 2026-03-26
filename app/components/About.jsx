@@ -19,11 +19,11 @@ export default function About() {
 
       {/* About Me Text */}
       <div className="w-full sm:w-6/12 flex flex-col gap-3">
-        <h4 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-[#FBFBFB] tracking-[2px]">
+        <h4 className="text-2xl sm:text-3xl font-semibold max-sm:text-center text-black dark:text-[#FBFBFB] tracking-[1.95px] ">
           About Me
         </h4>
 
-        <p className="text-xl text-black dark:text-[#FBFBFB]">
+        <p className="text-lg sm:text-xl text-black dark:text-[#FBFBFB] mt-[-4px]">
           Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
           felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus
           consectetur lacus
