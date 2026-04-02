@@ -43,11 +43,11 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="w-full flex flex-wrap justify-center mt-4 ">
+      <div className="w-full flex flex-wrap justify-center mt-4  gap-4">
         {services.map((service, index) => (
           <div
             key={index}
-            className="mb-6 w-[320px] bg-[#F3F3F3] rounded-sm pt-6 sm:pt-8 sm:pb-6 pb-8 px-4 mx-auto"
+            className="mb-6 w-75 bg-[#F3F3F3] rounded-sm pt-6 sm:pt-8 sm:pb-6 pb-8 px-4 mx-auto"
           >
             <i className="text-4xl mb-4 block">
               <Image
@@ -57,8 +57,8 @@ export default function Services() {
                 height={83}
                 className={clsx(
                   service.title === "App Design"
-                    ? "w-[47px] h-[83px]"
-                    : "w-[70px] h-[70px]",
+                    ? "w-11.75 h-20.75"
+                    : "w-17.5 h-17.5",
                 )}
               />
             </i>
