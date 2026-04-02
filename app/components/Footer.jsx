@@ -6,9 +6,9 @@ import Name from "./Name";
 export default function Footer() {
   return (
     <footer className="bg-[#f8f8f8] dark:bg-[#333] flex flex-col gap-12 pt-5 text-center">
-      <p className="scale-50">
+      <div className="scale-50">
         <Name />
-      </p>
+      </div>
 
       {/* Navigation Links */}
       <div>
