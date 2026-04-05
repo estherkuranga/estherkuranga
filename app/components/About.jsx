@@ -1,6 +1,7 @@
 import React from "react";
 import Photo from "./Photo";
 import { Slider } from "@/components/ui/slider";
+import SectionHeader from "./SectionHeader";
 
 export default function About() {
   const skills = [

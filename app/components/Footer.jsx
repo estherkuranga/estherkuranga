@@ -5,13 +5,13 @@ import Name from "./Name";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f8f8f8] dark:bg-[#333] flex flex-col gap-12 pt-5 text-center">
+    <footer className="w-full bg-[#f8f8f8] dark:bg-[#333] flex flex-col gap-8 pt-5 mt-12 text-center">
       <div className="scale-50">
         <Name />
       </div>
 
       {/* Navigation Links */}
-      <div>
+      <div className="w-full flex max-sm:flex-col max-sm:space-y-3 items-center justify-center space-x-4 sm:space-x-6 md:space-x-8">
         {navData.map((navItem, index) => (
           <a
             key={index}
