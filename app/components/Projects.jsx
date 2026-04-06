@@ -2,17 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { projectData } from "@/lib/data";
+import { projectData, categories } from "@/lib/data";
 import ProjectModal from "./ProjectModal";
 import SectionHeader from "./SectionHeader";
 
-const categories = [
-  "All",
-  "UI/UX",
-  "App Design",
-  "Website Design",
-  "Graphic Design",
-];
 export default function Projects() {
   const [selectedProject, setSelectedProject] = React.useState(null);
 

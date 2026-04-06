@@ -2,35 +2,9 @@ import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import SectionHeader from "./SectionHeader";
+import { services } from "@/lib/data";
 
 export default function Services() {
-  const services = [
-    {
-      icon: "/icons/services/uiux.svg",
-      title: "UI/UX",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
-    },
-    {
-      icon: "/icons/services/app.svg",
-      title: "App Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
-    },
-    {
-      icon: "/icons/services/web.svg",
-      title: "Website Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
-    },
-    {
-      icon: "/icons/services/graphic.svg",
-      title: "Graphic Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
-    },
-  ];
-
   return (
     <SectionHeader
       title="Services"
@@ -40,7 +14,7 @@ export default function Services() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="mb-6 w-72 bg-[#F3F3F3] rounded-sm pt-6 sm:pt-8 sm:pb-6 pb-8 px-4 mx-auto"
+            className="w-72 bg-[#F3F3F3] rounded-sm pt-6 sm:pt-8 sm:pb-6 pb-8 px-4 mx-auto"
           >
             <i className="text-4xl mb-4 block">
               <Image

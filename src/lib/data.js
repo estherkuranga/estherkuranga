@@ -31,6 +31,33 @@ export const socialIcons = [
   },
 ];
 
+export const services = [
+  {
+    icon: "/icons/services/uiux.svg",
+    title: "UI/UX",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/app.svg",
+    title: "App Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/web.svg",
+    title: "Website Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/graphic.svg",
+    title: "Graphic Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+];
+
 export const projectData = [
   {
     title: "MealMate",
@@ -72,4 +99,12 @@ export const projectData = [
       "The ChowGo App is a food delivery app designed to connect customers with local restaurants, featuring a seamless ordering experience and real-time tracking. Users can browse menus, place orders, and track their deliveries with ease.",
     link: "https://www.figma.com/design/s4buHQ4cmPxxqkLLlsNYdd/Food-Delivery-Mobile-App?m=auto&t=j6RSzZzS1tkAVO21-6",
   },
+];
+
+export const categories = [
+  "All",
+  "UI/UX Design",
+  "App Design",
+  "Web Design",
+  "Graphic Design",
 ];
