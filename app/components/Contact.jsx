@@ -10,7 +10,7 @@ export default function Contact() {
       fghh hgjj nisi ante."
     >
       <form action="#" method="get" className="w-full sm:w-5/6 m-auto mt-8">
-        <div className="  w-full sm:w-4/6 m-auto mt-8 flex flex-col sm:flex-row gap-4 items-center justify-center ">
+        <div className="w-full sm:w-4/6 m-auto mt-8 flex flex-col sm:flex-row gap-4 items-center justify-center ">
           <input
             type="email"
             placeholder="Enter Your Email"

@@ -101,6 +101,44 @@ export const projectData = [
   },
 ];
 
+export const testimonialData = [
+  {
+    name: "John Doe",
+    title: "CEO,  EL Kratos Embassy",
+    feedback:
+      "Esther is an exceptional designer who consistently delivers high-quality work. Her attention to detail and creativity are unmatched. She is a pleasure to work with and always goes above and beyond to ensure client satisfaction.",
+    avatar: "/images/testimonials/testifier1.svg",
+  },
+  {
+    name: "Jane Smith",
+    title: "Product Manager, EL Kratos Embassy",
+    feedback:
+      "Esther's design skills are top-notch. She has a keen eye for detail and always delivers creative solutions that exceed expectations. Her professionalism and dedication to her work make her an invaluable asset to any project.",
+    avatar: "/images/testimonials/testifier2.svg",
+  },
+  {
+    name: "Michael Johnson",
+    title: "CTO, PHEBTs",
+    feedback:
+      "Esther's work has significantly improved our user experience. Her innovative approach and technical expertise are invaluable. She is a true professional who consistently delivers outstanding results. I highly recommend her for any design project.",
+    avatar: "/images/testimonials/testifier3.svg",
+  },
+  {
+    name: "Emily Davis",
+    title: "Marketing Director, PHEBTs",
+    feedback:
+      "Esther's design work has been instrumental in enhancing our brand image. Her creativity and attention to detail are exceptional. She is a pleasure to work with and always delivers high-quality results on time.",
+    avatar: "/images/testimonials/testifier1.svg",
+  },
+  {
+    name: "David Wilson",
+    title: "Founder, EL Kratos Embassy",
+    feedback:
+      "Esther is a talented designer who consistently produces outstanding work. Her creativity and dedication to her craft are evident in every project she undertakes. She is a valuable asset to any team and I highly recommend her.",
+    avatar: "/images/testimonials/testifier3.svg",
+  },
+];
+
 export const categories = [
   "All",
   "UI/UX Design",
