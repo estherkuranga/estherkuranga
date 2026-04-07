@@ -1,0 +1,56 @@
+"use client";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+export default function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent!");
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          alert("Failed to send message.");
+        },
+      );
+  };
+  return (
+    <form
+      ref={form}
+      onClick={sendEmail}
+      className="w-full sm:w-5/6 m-auto mt-8"
+    >
+      <div className="w-full sm:w-4/6 m-auto mt-8 flex flex-col gap-4 items-center justify-center ">
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          className="w-4/6 bg-[#F8F8F8] dark:bg-black border border-[#AFAFAF] dark:border-[#FBFBFB] placeholder:text-[#797979]dark:placeholder:text-[#FBFBFB] text-black dark:text-[#FBFBFB] py-3 pl-4 pr-16 rounded focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
+        />
+        <textarea
+          name="message"
+          required
+          className="w-4/6 bg-[#F8F8F8] dark:bg-black border border-[#AFAFAF] dark:border-[#FBFBFB] placeholder:text-[#797979]dark:placeholder:text-[#FBFBFB] text-black dark:text-[#FBFBFB] py-3 pl-4 pr-16 rounded focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
+          placeholder="Enter Your Message"
+        />
+        <button
+          type="submit"
+          className="w-fit bg-[#FD6F00] hover:bg-[#e56a00] rounded-lg text-white text-xl tracking-[0.72px] py-2 px-4 focus:outline-none focus:ring focus:ring-[#FD6F00]"
+        >
+          Contact Me
+        </button>
+      </div>
+    </form>
+  );
+}
