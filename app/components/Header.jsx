@@ -41,11 +41,11 @@ export default function Header() {
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB]">
           UI & UX
         </h1>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] ml-12 sm:ml-24 md:ml-36">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] -mt-3 ml-12 sm:ml-24 md:ml-36">
           Designer
         </h1>
 
-        <p className=" text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8">
+        <p className="w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 text-base sm:text-lg md:text-xl mb-4 sm:mb-4 md:mb-6">
           Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
           felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus
           consectetur lacus
@@ -54,7 +54,7 @@ export default function Header() {
         {/* Hire Me Button */}
         <button
           type="button"
-          className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-4 sm:py-2 sm:px-6 md:px-8 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white"
+          className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-4 sm:py-2 sm:px-8 md:px-10 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white"
         >
           Hire Me
         </button>

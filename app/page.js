@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Header from "./components/Header";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex min-h-screen w-5/6 flex-col items-center py-4 md:py-8 bg-white dark:bg-black md:items-start">
         <Nav />
         <Header />
+        <About />
       </main>
     </div>
   );
