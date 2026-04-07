@@ -36,25 +36,19 @@ export const services = [
     icon: "/icons/services/uiux.svg",
     title: "UI/UX",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+      "Crafting intuitive, user-centered interfaces that prioritize usability and aesthetics to create delightful digital experiences.",
   },
   {
     icon: "/icons/services/app.svg",
     title: "App Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+      "Designing beautiful and functional mobile applications that engage users and deliver exceptional user experiences.",
   },
   {
     icon: "/icons/services/web.svg",
     title: "Website Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
-  },
-  {
-    icon: "/icons/services/graphic.svg",
-    title: "Graphic Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+      "Building responsive and modern websites that engage visitors and effectively communicate your brand's message.",
   },
 ];
 

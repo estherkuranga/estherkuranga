@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <SectionHeader
       title="Projects"
-      description="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
+      description="Explore my portfolio of design projects showcasing my expertise in creating engaging and user-friendly digital experiences."
     >
       {/* Projects category  */}
       <div className="max-sm:hidden w-full sm:w-4/6 m-auto mt-8">

@@ -8,7 +8,7 @@ export default function Services() {
   return (
     <SectionHeader
       title="Services"
-      description="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
+      description="I offer comprehensive design services tailored to enhance your digital presence and create meaningful user experiences across all platforms."
     >
       <div className="w-full flex flex-wrap justify-center mt-4  gap-4">
         {services.map((service, index) => (

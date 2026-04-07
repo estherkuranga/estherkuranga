@@ -18,7 +18,7 @@ export default function Testimonials() {
   return (
     <SectionHeader
       title="Testimonials"
-      description="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
+      description="See what clients and collaborators have to say about working with me and the impact of my design work."
     >
       <Swiper
         // install Swiper modules

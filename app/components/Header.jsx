@@ -23,9 +23,10 @@ export default function Header() {
         </h1>
 
         <p className="text-lg sm:text-xl w-full sm:w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 md:text-xl mb-4 sm:mb-4 md:mb-6">
-          Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
-          felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus
-          consectetur lacus
+          I'm a passionate UI/UX designer with expertise in creating intuitive
+          and visually stunning digital experiences. I specialize in
+          transforming complex ideas into elegant design solutions that engage
+          users and drive results.
         </p>
 
         {/* Hire Me Button */}

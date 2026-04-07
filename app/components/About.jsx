@@ -8,7 +8,6 @@ export default function About() {
     { name: "UX", value: 80 },
     { name: "App Design", value: 90 },
     { name: "Website Design", value: 70 },
-    { name: "Graphic Design", value: 65 },
   ];
 
   return (
@@ -24,14 +23,16 @@ export default function About() {
           About Me
         </h4>
 
-        <p className="text-lg sm:text-xl text-black dark:text-[#FBFBFB] mt-[-4px]">
-          Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
-          felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus
-          consectetur lacus
+        <p className="text-lg sm:text-xl text-black dark:text-[#FBFBFB] -mt-1">
+          I&apos;m a creative designer with a strong focus on user-centered
+          design principles. With years of experience in UI/UX design, I&apos;ve
+          helped numerous brands enhance their digital presence through
+          thoughtful and innovative design solutions that prioritize both
+          aesthetics and functionality.
         </p>
 
         {/* Skills Slider */}
-        <div className="mt-[-12px] sm:mt-1">
+        <div className="-mt-3 sm:mt-1">
           {skills.map((skill) => (
             <div
               key={skill.name}
@@ -42,7 +43,7 @@ export default function About() {
                 defaultValue={[skill.value]}
                 max={100}
                 step={2}
-                className=" w-full h-1.5 mt-[-12px] [&_[role='slider']]:border-[#FF6300] [&_[role='slider']]:bg-[#EDECEC] [&_[data-slot='slider-range']]:bg-[#FF6300] [&_[data-slot='slider-track']]:bg-[#EDECEC]"
+                className=" w-full h-1.5 -mt-3 **:[[role='slider']]:border-[#FF6300] **:[[role='slider']]:bg-[#EDECEC] **:data-[slot='slider-range']:bg-[#FF6300] **:data-[slot='slider-track']:bg-[#EDECEC]"
               />
             </div>
           ))}
