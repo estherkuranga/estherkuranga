@@ -122,7 +122,7 @@ export const testimonialData = [
     title: "Marketing Director, PHEBTs",
     feedback:
       "Esther's design work has been instrumental in enhancing our brand image. Her creativity and attention to detail are exceptional. She is a pleasure to work with and always delivers high-quality results on time.",
-    avatar: "/images/testimonials/testifier1.svg",
+    avatar: "/images/testimonials/testifier4.svg",
   },
   {
     name: "David Wilson",
