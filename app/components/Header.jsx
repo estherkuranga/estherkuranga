@@ -41,11 +41,11 @@ export default function Header() {
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB]">
           UI & UX
         </h1>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] mt-[-12px] ml-12 sm:ml-24 md:ml-36">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] -mt-3 ml-12 sm:ml-24 md:ml-36">
           Designer
         </h1>
 
-        <p className="text-lg sm:text-xl w-full sm:w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 text-base sm:text-lg md:text-xl mb-4 sm:mb-4 md:mb-6">
+        <p className="text-lg sm:text-xl w-full sm:w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 md:text-xl mb-4 sm:mb-4 md:mb-6">
           Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
           felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus
           consectetur lacus
