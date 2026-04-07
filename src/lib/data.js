@@ -133,10 +133,4 @@ export const testimonialData = [
   },
 ];
 
-export const categories = [
-  "All",
-  "UI/UX Design",
-  "App Design",
-  "Web Design",
-  "Graphic Design",
-];
+export const categories = ["All", "UI/UX Design", "App Design", "Web Design"];
