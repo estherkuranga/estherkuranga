@@ -31,6 +31,33 @@ export const socialIcons = [
   },
 ];
 
+export const services = [
+  {
+    icon: "/icons/services/uiux.svg",
+    title: "UI/UX",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/app.svg",
+    title: "App Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/web.svg",
+    title: "Website Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+  {
+    icon: "/icons/services/graphic.svg",
+    title: "Graphic Design",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh.",
+  },
+];
+
 export const projectData = [
   {
     title: "MealMate",
@@ -112,45 +139,10 @@ export const testimonialData = [
   },
 ];
 
-// <form
-//   ref={form}
-//   onSubmit={sendEmail}
-//   className="w-full sm:w-4/6 mt-5 flex flex-col gap-4 justify-center items-center m-auto"
-// >
-//   <div className="w-full sm:w-4/6 flex max-sm:flex-col gap-2">
-//     <label>Name</label>
-//     <input
-//       type="text"
-//       name="user_name"
-//       required
-//       className="bg-[#F8F8F8] dark:bg-black border border-[#AFAFAF] dark:border-[#FBFBFB] placeholder:text-[#797979]dark:placeholder:text-[#FBFBFB] text-black dark:text-[#FBFBFB] py-3 pl-4 pr-16 rounded focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
-//     />
-//   </div>
-
-//   <div className="w-full sm:w-4/6 flex max-sm:flex-col gap-2">
-//     <label>Email</label>
-//     <input
-//       type="email"
-//       name="user_email"
-//       required
-//       className="bg-[#F8F8F8] dark:bg-black border border-[#AFAFAF] dark:border-[#FBFBFB] placeholder:text-[#797979]dark:placeholder:text-[#FBFBFB] text-black dark:text-[#FBFBFB] py-3 pl-4 pr-16 rounded focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
-//     />
-//   </div>
-
-//   <div className="w-full sm:w-4/6 flex max-sm:flex-col justify-start gap-2">
-//     <label>Message</label>
-//     <textarea
-//       name="message"
-//       required
-//       className="bg-[#F8F8F8] dark:bg-black border border-[#AFAFAF] dark:border-[#FBFBFB] placeholder:text-[#797979]dark:placeholder:text-[#FBFBFB] text-black dark:text-[#FBFBFB] py-3 pl-4 pr-16 rounded focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
-//     />
-//   </div>
-
-//   <button
-//     type="submit"
-//     className="w-fit bg-[#FD6F00] hover:bg-[#e56a00] rounded-lg text-white text-xl tracking-[0.72px] py-2 px-4 focus:outline-none focus:ring focus:ring-[#FD6F00]"
-//     onClick={sendEmail}
-//   >
-//     Send
-//   </button>
-// </form>
+export const categories = [
+  "All",
+  "UI/UX Design",
+  "App Design",
+  "Web Design",
+  "Graphic Design",
+];
