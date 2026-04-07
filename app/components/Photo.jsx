@@ -10,7 +10,7 @@ export default function Photo() {
         alt="Bubble Image"
         width={160}
         height={160}
-        className="rounded-lg absolute max-sm:w-[100px] max-sm:top-10 max-sm:left-53 sm:top-40 sm:left-75"
+        className="rounded-lg absolute max-sm:w-25 max-sm:top-10 max-sm:left-53 sm:top-40 sm:left-75"
       />
 
       <Image
@@ -18,7 +18,7 @@ export default function Photo() {
         alt="Bubble Image"
         width={200}
         height={200}
-        className="rounded-lg absolute max-sm:w-[140px] max-sm:top-40 max-sm:left-0 sm:top-50 sm:left-10"
+        className="rounded-lg absolute max-sm:w-35 max-sm:top-40 max-sm:left-0 sm:top-50 sm:left-10"
       />
 
       <Image
@@ -26,14 +26,14 @@ export default function Photo() {
         alt="Bubble Image"
         width={70}
         height={70}
-        className="rounded-lg absolute max-sm:w-[50px] max-sm:top-12 max-sm:left-12 sm:top-22 sm:left-25"
+        className="rounded-lg absolute max-sm:w-12.5 max-sm:top-12 max-sm:left-12 sm:top-22 sm:left-25"
       />
       <Image
         src="/images/hero/bubble 4.svg"
         alt="Bubble Image"
         width={280}
         height={280}
-        className="rounded-lg absolute max-sm:w-[220px] max-sm:top-17 max-sm:left-12 sm:top-25 sm:left-25"
+        className="rounded-lg absolute max-sm:w-55 max-sm:top-17 max-sm:left-12 sm:top-25 sm:left-25"
       />
 
       {/* Main Photo */}
