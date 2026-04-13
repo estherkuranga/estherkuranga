@@ -1,11 +1,31 @@
+"use client";
+import { AiOutlineBulb } from "react-icons/ai";
+import {
+  MdFolderOpen,
+  MdMailOutline,
+  MdOutlineStarOutline,
+} from "react-icons/md";
+
 export const navData = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Projects", href: "#projects" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
-  { name: "Download CV", href: "#downloadcv" },
+  { name: "Home", to: "home", icon: AiOutlineBulb },
+  { name: "About", to: "about", icon: AiOutlineBulb },
+  {
+    name: "Services",
+    to: "services",
+    icon: AiOutlineBulb,
+  },
+  {
+    name: "Projects",
+    to: "projects",
+    icon: MdFolderOpen,
+  },
+  {
+    name: "Testimonials",
+    to: "testimonials",
+    icon: MdOutlineStarOutline,
+  },
+  { name: "Contact", to: "contact", icon: MdMailOutline },
+  { name: "Download CV", to: "downloadcv" },
 ];
 
 export const socialIcons = [
