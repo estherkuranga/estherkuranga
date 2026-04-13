@@ -50,6 +50,14 @@ export default function About() {
               </div>
             ))}
           </div>
+
+          <a
+            href="/cv.pdf"
+            download
+            className="md:hidden px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#383838] dark:hover:bg-[#ccc] transition duration-300 ease-in-out"
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </Element>
