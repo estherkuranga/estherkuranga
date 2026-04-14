@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Photo from "./Photo";
 import { socialIcons } from "@/lib/data";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -33,12 +33,14 @@ export default function Header() {
           </p>
 
           {/* Hire Me Button */}
-          <button
-            type="button"
-            className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-6 sm:py-2 sm:px-8 md:px-10 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white"
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-6 sm:py-2 sm:px-8 md:px-10 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white transition duration-300 ease-in-out cursor-pointer"
           >
             Hire Me
-          </button>
+          </Link>
         </div>
 
         <div className="w-full sm:w-5/12 flex flex-col items-center justify-between space-y-8 mt-16 sm:mt-0">
