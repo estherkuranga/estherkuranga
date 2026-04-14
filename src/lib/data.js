@@ -86,7 +86,7 @@ export const projectData = [
     src: "/images/projects/coffee shop.png",
     desc: "A modern coffee shop interface designed to enhance the customer experience with an intuitive ordering system and engaging visual design.",
     fullDesc:
-      "The Coffee Shop interface is designed to enhance the customer experience with an intuitive ordering system and engaging visual design. Users can easily browse the menu, customize their orders, and track their progress in real-time. The clean and modern aesthetic creates a welcoming atmosphere that encourages repeat visits.",
+      "The Coffee Shop interface is designed to enhance the customer experience with an intuitive ordering system and engaging visual design. Users can easily browse the menu, customize their orders, and track their progress in real-time. The clean and modern aesthetic creates a welcoming atmosphere that encourages repeat visits. ",
     link: "https://www.figma.com/design/OINPLHgca3oN3SKLcdLx5w/Coffee-Shop?m=auto&t=j6RSzZzS1tkAVO21-6",
   },
   {
@@ -94,7 +94,7 @@ export const projectData = [
     src: "/images/projects/spotify clone.png",
     desc: "A web-based music streaming app inspired by Spotify, featuring a sleek interface and comprehensive music library.",
     fullDesc:
-      "The Spotify Clone is a web-based music streaming app inspired by Spotify, featuring a sleek interface and comprehensive music library. Users can discover new music, create playlists, and listen to their favorite tracks on-demand.",
+      "The Spotify Clone is a web-based music streaming app inspired by Spotify, featuring a sleek interface and comprehensive music library. Users can discover new music, create playlists, and listen to their favorite tracks on-demand. The design focuses on providing an engaging and intuitive user experience, with easy navigation and visually appealing elements that enhance the overall enjoyment of music streaming.",
     link: "https://www.figma.com/design/QTVRRp9vNlkNF78kDAkP5x/Spotify-Web-Music-App?m=auto&t=j6RSzZzS1tkAVO21-6",
   },
   {
