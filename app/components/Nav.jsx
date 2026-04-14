@@ -12,7 +12,7 @@ export default function Nav() {
       <div className="w-full flex items-center justify-center lg:hidden ">
         <MobileBottomNav />
       </div>
-      <nav className=" flex items-center justify-between w-full bg-white dark:bg-black mb-16 sm:mb-20 md:mb-24 lg:mb-28 xl:mb-32 ">
+      <nav className="flex items-center justify-between w-full bg-white dark:bg-black mb-16 sm:mb-20 md:mb-8 lg:mb-28 xl:mb-32 ">
         <Name />
 
         {/* Desktop menubar */}

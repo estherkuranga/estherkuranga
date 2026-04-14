@@ -9,23 +9,23 @@ export default function Header() {
   return (
     // Header section
     <Element name="home">
-      <div className="w-full flex flex-col-reverse space-y-reverse sm:flex-row sm:items-start justify-between">
+      <div className=" -mt-8 w-full flex flex-col-reverse space-y-reverse sm:flex-row sm:items-start justify-between">
         {/* Header Content */}
-        <div className="w-full sm:w-7/12">
-          <h6 className="text-xs mt-28 max-sm:mt-12 sm:mt-0 sm:text-sm font-semibold text-gray-800 dark:text-gray-200">
+        <div className="w-full sm:w-7/12 animate-fade-in-up">
+          <h6 className="text-xs max-sm:mt-12 sm:mt-0 sm:text-sm font-semibold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-100">
             Hi, I am
           </h6>
-          <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FF6300] dark:text-gray-200 tracking-[2px]">
+          <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FF6300] dark:text-gray-200 tracking-[2px] animate-fade-in-up animation-delay-200">
             Esther Kuranga
           </h4>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB]">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] animate-fade-in-up animation-delay-300">
             UI & UX
           </h1>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] -mt-3 ml-12 sm:ml-24 md:ml-36">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-black dark:text-[#FBFBFB] -mt-3 ml-12 sm:ml-24 md:ml-36 animate-fade-in-up animation-delay-400">
             Designer
           </h1>
 
-          <p className="text-lg sm:text-xl w-full sm:w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 md:text-xl mb-4 sm:mb-4 md:mb-6">
+          <p className="text-lg sm:text-xl w-full sm:w-5/6 text-black dark:text-[#FBFBFB] mt-2 sm:mt-4 md:mt-6 md:text-xl mb-4 sm:mb-4 md:mb-6 animate-fade-in-up animation-delay-500">
             I&apos;m a passionate UI/UX designer with expertise in creating
             intuitive and visually stunning digital experiences. I specialize in
             transforming complex ideas into elegant design solutions that engage
@@ -37,15 +37,18 @@ export default function Header() {
             to="contact"
             smooth={true}
             duration={500}
-            className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-6 sm:py-2 sm:px-8 md:px-10 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white transition duration-300 ease-in-out cursor-pointer"
+            className="bg-[#FF6300] text-white text-base sm:text-lg md:text-xl font-normal py-1 px-6 sm:py-2 sm:px-8 md:px-10 rounded hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-lg animate-fade-in-up animation-delay-600"
           >
             Hire Me
           </Link>
         </div>
-
-        <div className="w-full sm:w-5/12 flex flex-col items-center justify-between space-y-8 mt-16 sm:mt-0">
+        {/*  */}
+        <div className="w-full sm:w-5/12 flex flex-col items-center justify-between space-y-8 mt-16 sm:mt-0 animate-fade-in-up animation-delay-700">
           {/* Photo */}
-          <Photo />
+          {/* <div> */}
+          <Photo className="transition-transform duration-500 ease-out hover:scale-105" />
+
+          {/* </div> */}
 
           {/* Social Icons */}
           <div className="w-full flex items-center justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-96 max-sm:mt-70">
@@ -55,13 +58,15 @@ export default function Header() {
                 href={icon.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80 animate-fade-in-up"
+                style={{ animationDelay: `${800 + index * 100}ms` }}
               >
                 <Image
                   src={icon.src}
                   alt={icon.name}
                   width={24}
                   height={24}
-                  className="rounded-lg sm:w-8 sm:h-8"
+                  className="rounded-lg sm:w-8 sm:h-8 transition-all duration-300 ease-in-out"
                 />
               </a>
             ))}

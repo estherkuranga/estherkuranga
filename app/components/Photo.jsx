@@ -39,7 +39,7 @@ export default function Photo() {
       {/* Main Photo */}
       <Image
         src="/images/hero/myphoto.png"
-        alt="Bubble Image"
+        alt="My Photo"
         width={300}
         height={250}
         className="rounded-lg absolute max-sm:top-[-130] max-sm:left-02 sm:top-[-50] sm:left-25"
