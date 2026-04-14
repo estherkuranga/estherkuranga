@@ -42,13 +42,9 @@ export default function Header() {
             Hire Me
           </Link>
         </div>
-        {/*  */}
-        <div className="w-full sm:w-5/12 flex flex-col items-center justify-between space-y-8 mt-16 sm:mt-0 animate-fade-in-up animation-delay-700">
-          {/* Photo */}
-          {/* <div> */}
-          <Photo className="transition-transform duration-500 ease-out hover:scale-105" />
 
-          {/* </div> */}
+        <div className="w-full sm:w-5/12 flex flex-col items-center justify-between space-y-8 mt-16 sm:mt-0 animate-fade-in-up animation-delay-700">
+          <Photo className="transition-transform duration-500 ease-out hover:scale-105" />
 
           {/* Social Icons */}
           <div className="w-full flex items-center justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-96 max-sm:mt-70">
