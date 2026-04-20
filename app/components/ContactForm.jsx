@@ -53,7 +53,7 @@ export default function ContactForm() {
           <button
             type="submit"
             onClick={sendEmail}
-            className="w-fit bg-[#FD6F00] hover:bg-[#e56a00] rounded-lg text-white text-xl tracking-[0.72px] py-2 px-4 focus:outline-none focus:ring focus:ring-[#FD6F00] transition-all duration-300 hover:scale-110 hover:shadow-lg animate-fade-in-up animation-delay-300"
+            className="w-fit bg-[#FD6F00] rounded-lg text-white text-xl tracking-[0.72px] py-2 px-4 focus:outline-none focus:ring focus:ring-[#FD6F00] transition-all duration-300 hover:shadow-xl animate-fade-in-up animation-delay-300 cursor-pointer"
           >
             Contact Me
           </button>
