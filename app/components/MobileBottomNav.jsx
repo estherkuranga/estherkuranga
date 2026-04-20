@@ -13,7 +13,7 @@ export default function MobileBottomNav() {
 
   return (
     // Mobile bottom navigation bar
-    <ul className="w-full bg-white/20 dark:bg-black/20 backdrop-blur-md flex items-center justify-center lg:hidden fixed bottom-[-2] z-50 pb-4 rounded-t-3xl shadow-lg px-4 font-normal transition duration-300 ease-in-out">
+    <ul className="w-full p-4  bg-white/20 dark:bg-black/20 backdrop-blur-md flex items-center justify-center lg:hidden fixed bottom-[-2] z-50  shadow-lg font-normal transition duration-300 ease-in-out">
       <li className="flex items-center space-x-6 sm:space-x-8 text-lg">
         {filteredNavData.map((navItem, index) => (
           <Link

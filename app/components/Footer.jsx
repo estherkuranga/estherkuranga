@@ -59,7 +59,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="text-sm bg-[#545454] py-4 text-white dark:text-gray-500 tracking-[0.63px]">
+        <p className="text-sm bg-[#545454] py-4 text-white dark:text-gray-500 tracking-[0.63px] max-sm:mb-3.5">
           &copy; {new Date().getFullYear()}
           <span className="px-1 text-[#FD6F00] dark:text-gray-200 ml-1 mr-2">
             Esther.

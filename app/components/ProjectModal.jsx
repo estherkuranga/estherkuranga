@@ -8,11 +8,15 @@ export default function ProjectModal({ item, setSelectedProject }) {
     <>
       <Modal>
         <div className="  bg-white p-4 rounded-xl w-full max-w-4xl flex flex-col items-center">
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex max-sm:flex-col-reverse  items-center justify-center">
             <h3 className="w-full text-2xl text-center tracking-wide font-bold text-black dark:text-[#FBFBFB]">
               {item.title}
             </h3>
-            <button type="button" onClick={() => setSelectedProject(null)}>
+            <button
+              type="button"
+              onClick={() => setSelectedProject(null)}
+              className="max-sm:w-full max-sm:flex justify-end"
+            >
               <Image
                 src="/icons/closeIcon.svg"
                 alt="Close"
@@ -22,13 +26,13 @@ export default function ProjectModal({ item, setSelectedProject }) {
             </button>
           </div>
 
-          <div className="w-200 mt-5 flex max-sm:flex-col gap-5 text-gray-700 dark:text-[#FBFBFB] items-center">
+          <div className="w-200 max-sm:w-full mt-5 flex max-sm:flex-col gap-5 text-gray-700 dark:text-[#FBFBFB] items-center">
             <Image
               src={item.src}
               alt={item.title}
               width={300}
               height={200}
-              className="w-1/2 rounded-lg mb-4"
+              className="w-1/2 max-sm:w-full rounded-lg mb-4"
             />
             <p className="text-start text-lg">{item.fullDesc}</p>
           </div>
