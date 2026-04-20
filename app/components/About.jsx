@@ -53,7 +53,7 @@ export default function About() {
                     step={2}
                     className=" w-full h-1.5 -mt-5 **:[[role='slider']]:border-[#FF6300] **:[[role='slider']]:bg-[#EDECEC] **:data-[slot='slider-range']:bg-[#FF6300] **:data-[slot='slider-track']:bg-[#EDECEC] transition-all duration-500"
                   />
-                  <span className="text-sm font-medium text-black dark:text-[#FBFBFB] -mt-4">
+                  <span className="text-sm font-medium text-black dark:text-[#FBFBFB] -mt-4 max-sm:-mt-5">
                     {skill.value}%
                   </span>
                 </div>
@@ -64,7 +64,7 @@ export default function About() {
           <a
             href="/estherKuranga.pdf"
             download
-            className="md:hidden px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#383838] dark:hover:bg-[#ccc] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate-fade-in-up animation-delay-700 cursor-pointer"
+            className="md:hidden px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white text-center rounded-sm  transition-all duration-300 ease-in-out hover:scale-102 focus:shadow-lg animate-fade-in-up animation-delay-700 cursor-pointer"
           >
             Download CV
           </a>

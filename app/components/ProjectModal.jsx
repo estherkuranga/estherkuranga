@@ -4,7 +4,6 @@ import Modal from "./Modal";
 import Image from "next/image";
 
 export default function ProjectModal({ item, setSelectedProject }) {
-  // const [open, setOpen] = React.useState(true);
   return (
     <>
       <Modal>
