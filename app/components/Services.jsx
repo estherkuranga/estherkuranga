@@ -17,7 +17,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="w-72 bg-[#F3F3F3] rounded-sm pt-6 sm:pt-8 sm:pb-6 pb-8 px-4 mx-auto transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl hover:bg-[#F0F0F0] dark:hover:bg-[#3A3A3A] animate-fade-in-up"
+              className="max-sm:w-72 max-w-86 md:flex gap-4  bg-[#F3F3F3] rounded-sm pt-5 pb-5 sm:pt-8 sm:pb-6 px-3 mx-auto transition-all duration-500 ease-out hover:scale-101 hover:shadow-xl hover:bg-[#F0F0F0] dark:hover:bg-[#3A3A3A] animate-fade-in-up"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <i className="text-4xl mb-4 block transition-transform duration-300 hover:scale-110">
@@ -28,17 +28,19 @@ export default function Services() {
                   height={83}
                   className={clsx(
                     service.title === "App Design"
-                      ? "w-11.75 h-20.75"
-                      : "w-17.5 h-17.5",
+                      ? "w-11.75 h-20.75 md:w-40 md:h-34"
+                      : "w-17.5 h-17.5 md:w-48 md:h-48",
                   )}
                 />
               </i>
-              <h4 className="text-xl sm:text-3xl font-semibold text-black dark:text-[#FBFBFB] mb-2 transition-colors duration-300 hover:text-[#FF6300]">
-                {service.title}
-              </h4>
-              <p className="text-lg sm:text-xl text-black dark:text-[#FBFBFB] tracking-[0.57px]">
-                {service.description}
-              </p>
+              <div>
+                <h4 className="text-xl sm:text-3xl font-semibold text-black dark:text-[#FBFBFB] mb-2 transition-colors duration-300 hover:text-[#FF6300]">
+                  {service.title}
+                </h4>
+                <p className="text-lg sm:text-xl text-black dark:text-[#FBFBFB] tracking-[0.57px] text-start">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

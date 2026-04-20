@@ -38,26 +38,33 @@ export default function About() {
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className=" w-full flex flex-col gap-4 mb-2 sm:mb-4 mt-3 animate-fade-in-up"
+                className=" w-full flex flex-col gap-3 sm:mb-4 mt-3 animate-fade-in-up"
                 style={{ animationDelay: `${600 + index * 200}ms` }}
               >
-                <h6 className="font-bold transition-colors duration-300 hover:text-[#FF6300]">
+                <h6 className="font-bold transition-colors duration-300 ">
                   {skill.name}
                 </h6>
-                <Slider
-                  defaultValue={[skill.value]}
-                  max={100}
-                  step={2}
-                  className=" w-full h-1.5 -mt-3 **:[[role='slider']]:border-[#FF6300] **:[[role='slider']]:bg-[#EDECEC] **:data-[slot='slider-range']:bg-[#FF6300] **:data-[slot='slider-track']:bg-[#EDECEC] transition-all duration-500"
-                />
+
+                <div className="w-full flex items-center gap-4 justify-center">
+                  <Slider
+                    defaultValue={[skill.value]}
+                    max={100}
+                    disabled
+                    step={2}
+                    className=" w-full h-1.5 -mt-5 **:[[role='slider']]:border-[#FF6300] **:[[role='slider']]:bg-[#EDECEC] **:data-[slot='slider-range']:bg-[#FF6300] **:data-[slot='slider-track']:bg-[#EDECEC] transition-all duration-500"
+                  />
+                  <span className="text-sm font-medium text-black dark:text-[#FBFBFB] -mt-4">
+                    {skill.value}%
+                  </span>
+                </div>
               </div>
             ))}
           </div>
 
           <a
-            href="/cv.pdf"
+            href="/estherKuranga.pdf"
             download
-            className="md:hidden px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#383838] dark:hover:bg-[#ccc] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate-fade-in-up animation-delay-700"
+            className="md:hidden px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#383838] dark:hover:bg-[#ccc] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate-fade-in-up animation-delay-700 cursor-pointer"
           >
             Download CV
           </a>

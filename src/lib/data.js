@@ -30,24 +30,14 @@ export const navData = [
 
 export const socialIcons = [
   {
-    href: "https://www.facebook.com/profile.php?id=10000857599518",
-    name: "Facebook",
-    src: "/icons/hero/Facebook.svg",
-  },
-  {
-    href: "https://www.x.com/moontess64?t=x-1Sgub-wyakuw101OUmyg&s=09/",
-    name: "Twitter",
-    src: "/icons/hero/Twitter.svg",
-  },
-  {
     href: "https://www.linkedin.com/in/estherkuranga/",
     name: "LinkedIn",
     src: "/icons/hero/LinkedIn.svg",
   },
   {
-    href: "https://www.instagram.com/moontess1?igsh=a3FxMTc1czNjYWV6/",
-    name: "Instagram",
-    src: "/icons/hero/Instagram.svg",
+    href: "mailto:estherak64@gmail.com",
+    name: "Email",
+    src: "/icons/hero/email.svg",
   },
 ];
 
@@ -75,6 +65,7 @@ export const services = [
 export const projectData = [
   {
     title: "MealMate",
+    categories: "UI/UX Design",
     src: "/images/projects/mealmateui.png",
     desc: "A mobile meal-planning and cooking assistant designed to help busy individuals decide what to eat, plan when to cook, and manage groceries efficiently, without decision fatigue.",
     fullDesc:
@@ -83,7 +74,9 @@ export const projectData = [
   },
   {
     title: "Coffee Shop",
-    src: "/images/projects/coffee shop.png",
+    categories: "UI/UX Design",
+
+    src: "/images/projects/coffeeShop.png",
     desc: "A modern coffee shop interface designed to enhance the customer experience with an intuitive ordering system and engaging visual design.",
     fullDesc:
       "The Coffee Shop interface is designed to enhance the customer experience with an intuitive ordering system and engaging visual design. Users can easily browse the menu, customize their orders, and track their progress in real-time. The clean and modern aesthetic creates a welcoming atmosphere that encourages repeat visits. ",
@@ -91,7 +84,9 @@ export const projectData = [
   },
   {
     title: "Spotify Clone",
-    src: "/images/projects/spotify clone.png",
+    categories: "Web Design",
+
+    src: "/images/projects/spotifyClone.png",
     desc: "A web-based music streaming app inspired by Spotify, featuring a sleek interface and comprehensive music library.",
     fullDesc:
       "The Spotify Clone is a web-based music streaming app inspired by Spotify, featuring a sleek interface and comprehensive music library. Users can discover new music, create playlists, and listen to their favorite tracks on-demand. The design focuses on providing an engaging and intuitive user experience, with easy navigation and visually appealing elements that enhance the overall enjoyment of music streaming.",
@@ -99,6 +94,8 @@ export const projectData = [
   },
   {
     title: "Event Management App",
+    categories: "App Design",
+
     src: "/images/projects/event.png",
     desc: "A mobile app for managing and organizing events, featuring a user-friendly interface and comprehensive event planning tools.",
     fullDesc:
@@ -107,6 +104,8 @@ export const projectData = [
   },
   {
     title: "ChowGo App",
+    categories: "App Design",
+
     src: "/images/projects/chowgo.png",
     desc: "A food delivery app designed to connect customers with local restaurants, featuring a seamless ordering experience and real-time tracking.",
     fullDesc:
@@ -153,4 +152,12 @@ export const testimonialData = [
   },
 ];
 
-export const categories = ["All", "UI/UX Design", "App Design", "Web Design"];
+export const categories = [
+  {
+    name: "All",
+    categories: ["UI/UX Design", "App Design", "Web Design"],
+  },
+  { name: "UI/UX Design", categories: [] },
+  { name: "App Design", categories: [] },
+  { name: "Web Design", categories: [] },
+];

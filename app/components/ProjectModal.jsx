@@ -39,7 +39,7 @@ export default function ProjectModal({ item, setSelectedProject }) {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#FF6300] hover:bg-white hover:text-[#333]  text-lg text-white py-2 px-8 rounded-2xl hover:shadow-lg hover:border hover:border-[#FF6300] focus:outline-none focus:ring focus:ring-[#FF6000] mt-4"
+              className="bg-[#FF6300] text-white text-lg py-2 px-8 mt-4 rounded-2xl hover:shadow-lg focus:outline-none focus:ring focus:ring-white transition-all duration-300 ease-in-out cursor-pointer hover:scale-102 "
             >
               Visit
             </a>

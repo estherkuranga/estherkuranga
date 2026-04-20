@@ -9,7 +9,7 @@ export default function Header() {
   return (
     // Header section
     <Element name="home">
-      <div className=" -mt-8 w-full flex flex-col-reverse space-y-reverse sm:flex-row sm:items-start justify-between">
+      <div className="mt-20 w-full flex flex-col-reverse space-y-reverse sm:flex-row sm:items-start justify-between">
         {/* Header Content */}
         <div className="w-full sm:w-7/12 animate-fade-in-up">
           <h6 className="text-xs max-sm:mt-12 sm:mt-0 sm:text-sm font-semibold text-gray-800 dark:text-gray-200 animate-fade-in-up animation-delay-100">
@@ -47,25 +47,27 @@ export default function Header() {
           <Photo className="transition-transform duration-500 ease-out hover:scale-105" />
 
           {/* Social Icons */}
-          <div className="w-full flex items-center justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-96 max-sm:mt-70">
-            {socialIcons.map((icon, index) => (
-              <a
-                key={index}
-                href={icon.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80 animate-fade-in-up"
-                style={{ animationDelay: `${800 + index * 100}ms` }}
-              >
-                <Image
-                  src={icon.src}
-                  alt={icon.name}
-                  width={24}
-                  height={24}
-                  className="rounded-lg sm:w-8 sm:h-8 transition-all duration-300 ease-in-out"
-                />
-              </a>
-            ))}
+          <div className="w-full flex items-center justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-96 max-sm:mt-74">
+            {socialIcons.map((icon, index) => {
+              return (
+                <a
+                  key={index}
+                  href={icon.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80 animate-fade-in-up cursor-pointer"
+                  style={{ animationDelay: `${800 + index * 100}ms` }}
+                >
+                  <Image
+                    src={icon.src}
+                    alt={icon.name}
+                    width={24}
+                    height={24}
+                    className="rounded-lg sm:w-8 sm:h-8 transition-all duration-300 ease-in-out"
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

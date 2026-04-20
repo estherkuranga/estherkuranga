@@ -12,19 +12,19 @@ export default function Nav() {
       <div className="w-full flex items-center justify-center lg:hidden ">
         <MobileBottomNav />
       </div>
-      <nav className="flex items-center justify-between w-full bg-white dark:bg-black mb-16 sm:mb-20 md:mb-8 lg:mb-28 xl:mb-32 ">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full bg-white dark:bg-black py-4 px-6 md:py-6 md:px-16 md:pl-26">
         <Name />
 
         {/* Desktop menubar */}
-        <ul className="hidden lg:flex font-normal transition duration-300 ease-in-out  ">
+        <ul className="hidden lg:flex font-normal transition duration-300 ease-in-out ">
           <li className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 text-base sm:text-lg md:text-xl">
             {navData.map((navItem, index) =>
               navItem.to === "downloadcv" ? (
                 <a
                   key={index}
-                  href="/cv.pdf"
+                  href="/estherKuranga.pdf"
                   download
-                  className="px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#383838] dark:hover:bg-[#ccc] transition duration-300 ease-in-out"
+                  className="px-3 py-1 sm:px-4 sm:py-2 bg-[#FF6300] text-white rounded-sm hover:bg-[#FF6300] focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300 ease-in-out  hover:scale-102 hover:shadow-lg animate-fade-in-up animation-delay-600 cursor-pointer"
                 >
                   {navItem.name}
                 </a>

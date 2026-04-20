@@ -14,28 +14,39 @@ export default function Footer() {
         </div>
 
         {/* Navigation Links */}
-        <div className="w-full flex max-sm:flex-col max-sm:space-y-3 items-center justify-center space-x-4 sm:space-x-6 md:space-x-8">
-          {navData.map((navItem, index) => (
-            <Link
-              key={index}
-              to={navItem.to}
-              smooth={true}
-              duration={500}
-              className="text-sm text-black dark:text-gray-400 hover:text-[#FF6300] dark:hover:text-[#FF6300] transition duration-300 ease-in-out mx-3"
-            >
-              {navItem.name}
-            </Link>
-          ))}
+        <div className="text-start w-full flex max-sm:px-1 max-sm:flex-wrap max-sm:grid max-sm:grid-cols-4 max-sm:m-auto max-sm:space-y-3 items-center justify-center space-x-4 sm:space-x-6 md:space-x-8">
+          {navData.map((navItem, index) =>
+            navItem.to === "downloadcv" ? (
+              <a
+                key={index}
+                href="/estherKuranga.pdf"
+                download
+                className="text-sm text-black dark:text-gray-400 hover:text-[#FF6300] dark:hover:text-[#FF6300] transition duration-300 ease-in-out mx-3 cursor-pointer"
+              >
+                {navItem.name}
+              </a>
+            ) : (
+              <Link
+                to={navItem.to}
+                smooth={true}
+                duration={500}
+                key={index}
+                className=" text-sm text-black dark:text-gray-400 hover:text-[#FF6300] dark:hover:text-[#FF6300] transition duration-300 ease-in-out mx-3 cursor-pointer"
+              >
+                {navItem.name}
+              </Link>
+            ),
+          )}
         </div>
 
         {/* Social Icons */}
-        <div className="w-full flex items-center justify-center space-x-4 sm:space-x-6 md:space-x-8">
+        <div className="w-full flex items-center justify-center space-x-4 md:space-x-6">
           {socialIcons.map((icon, index) => (
             <a
               key={index}
               href={icon.href}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer cursor-pointer"
             >
               <Image
                 src={icon.src}

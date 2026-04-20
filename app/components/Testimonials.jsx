@@ -31,7 +31,7 @@ export default function Testimonials() {
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
-          className="mt-4 w-5/6 max-sm:w-full m-auto animate-fade-in-up animation-delay-200"
+          className="mt-4 w-5/6 max-sm:w-full m-auto animate-fade-in-up animation-delay-200 cursor-pointer"
         >
           {testimonialData.map((testimonial, index) => (
             <SwiperSlide
