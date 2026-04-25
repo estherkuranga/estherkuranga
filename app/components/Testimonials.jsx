@@ -26,7 +26,7 @@ export default function Testimonials() {
           // install Swiper modules
           modules={[Pagination, A11y, Autoplay]}
           spaceBetween={42}
-          slidesPerView={1.3}
+          slidesPerView={1}
           autoplay={{ delay: 2000 }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}

@@ -26,7 +26,7 @@ export default function Photo() {
         alt="Bubble Image"
         width={70}
         height={70}
-        className="w-17.5 h-17.5 rounded-lg absolute max-sm:w-12.5 max-sm:top-12 max-sm:left-12 sm:top-22 sm:left-25"
+        className="w-17.5 h-17.5 rounded-lg absolute max-sm:w-12.5 max-sm:top-17 max-sm:left-12 sm:top-22 sm:left-25"
       />
       <Image
         src="/images/hero/bubble 4.svg"
@@ -42,7 +42,7 @@ export default function Photo() {
         alt="My Photo"
         width={300}
         height={250}
-        className="rounded-lg absolute max-sm:top-[-130] max-sm:left-02 sm:top-[-50] sm:left-25"
+        className=" max-sm:w-75 max-sm:h-fit max-sm:mt-5 rounded-lg absolute max-sm:top-[-130] max-sm:left-02 sm:top-[-50] sm:left-25"
       />
     </div>
   );
